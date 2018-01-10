@@ -94,11 +94,12 @@ input[type="text"] {
 
 .task__add input[type="text"] {
   width: 365px;
+  border: 1px solid rgb(42, 125, 235);
 }
 
-.task__todo input[type="text"],
-.task__completed input[type="text"] {
+.task__todo input[type="text"] {
   width: 219px;
+  border: 1px solid rgb(75, 201, 96);
 }
 
 label {
@@ -114,6 +115,7 @@ label {
 }
 
 .task__completed label {
+  width: 336px;
   text-decoration: line-through;
 }
 
@@ -133,16 +135,22 @@ button {
   outline: none;
 }
 
-button.delete:hover {
+button.delete {
   border: 1px solid rgb(238, 82, 82);
   color: rgb(238, 82, 82);
 }
 
-button.edit:hover {
+button.edit {
   border: 1px solid rgb(75, 201, 96);
   color: rgb(75, 201, 96);
 }
 
+button.add {
+  border: 1px solid rgb(42, 125, 235);
+  color: rgb(42, 125, 235);
+}
+
 .task__completed .edit {
+  display: none;  
   visibility: hidden;
 }

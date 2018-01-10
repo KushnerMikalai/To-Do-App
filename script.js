@@ -48,6 +48,7 @@ function editTask() {
     editButton.innerText = "Save";
   }
   taskItem.classList.toggle("editMode");
+  editInput.focus();
 }
 
 function deleteTask() {
